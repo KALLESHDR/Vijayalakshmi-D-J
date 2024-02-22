@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+  font-family: "Russo One", arial, sans-serif;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Tiro Kannada', serif;
+  font-size: 1.5em;
+  position: absolute;
+  line-height: 2em;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Tiro Kannada', serif;
+  font-size: 1.5em;
+  position: absolute;
+  line-height: 2em;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+a
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+  z-index: 1000;
+}
+a svg,
+a svg rect
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+a svg rect
+{
+  stroke: #00e2ff;
+  stroke-width: 4;
+  transition: 3s;
+  stroke-dasharray: 100 200;
+  stroke-dashoffset: 20;
+}
+a:hover svg rect
+{
+  stroke: #ff0;
+  stroke-dasharray: 500 500;
+  stroke-dashoffset: 0;
+}
+
+
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.canvas-container {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
